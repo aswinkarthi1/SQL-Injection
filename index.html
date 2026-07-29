@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Search - Assignment 1</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 500px; margin: 60px auto; }
+        input, button { padding: 8px; font-size: 15px; margin-top: 8px; width: 100%; box-sizing: border-box; }
+        button { background: #2563eb; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>Product Search</h2>
+    <form action="search.php" method="POST">
+        <label for="product">Enter Product Name:</label>
+        <input type="text" name="product" id="product" placeholder="e.g. Laptop">
+        <button type="submit">Search</button>
+    </form>
+
+    <p style="margin-top:20px; color:#555; font-size: 13px;">
+        Demo payload to show SQL Injection: <code>' OR '1'='1</code>
+    </p>
+</body>
+</html>
